@@ -1,0 +1,11 @@
+[package]
+name = "main"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sdl2 = { version = "0.37.0", features = ["ttf"] }
+dbg_hex = "0.2.0"
+fyrox-sound = "0.36.0"
+fyrox-resource = "0.36.0"
+zilog_z80 = "0.16.0"

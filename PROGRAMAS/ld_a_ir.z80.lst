@@ -1,0 +1,6 @@
+0000   FB                     EI      
+0001   ED 57                  LD   A,I   
+0003   97                     SUB   A   
+0004   ED 5F                  LD   A,R   
+
+

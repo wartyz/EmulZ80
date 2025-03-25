@@ -1,0 +1,25 @@
+0204                          .ORG   0x204   
+0204   97                     SUB   A   
+0205   20 03                  JR   NZ,l0   
+0207   28 01                  JR   Z,l0   
+0209   00                     NOP      
+020A   C6 01        L0:       ADD   A,0x01   
+020C   28 03                  JR   Z,l1   
+020E   20 01                  JR   NZ,l1   
+0210   00                     NOP      
+0211   D6 03        L1:       SUB   0x03   
+0213   30 03                  JR   NC,l2   
+0215   38 01                  JR   C,l2   
+0217   00                     NOP      
+0218   00           L2:       NOP      
+
+
+L0:                 020A DEFINED AT LINE 6
+                    > USED AT LINE 3
+                    > USED AT LINE 4
+L1:                 0211 DEFINED AT LINE 10
+                    > USED AT LINE 7
+                    > USED AT LINE 8
+L2:                 0218 DEFINED AT LINE 14
+                    > USED AT LINE 11
+                    > USED AT LINE 12
