@@ -1,0 +1,21 @@
+0000   22 06 C0               LD   (0xC006),HL
+0003   F5                     PUSH   AF
+0004   E1                     POP   HL
+0005   22 00 C0               LD   (0xC000),HL
+0008   ED 43 02 C0            LD   (0xC002),BC
+000C   ED 53 04 C0            LD   (0xC004),DE
+0010   ED 73 08 C0            LD   (0xC008),SP
+0014   D9                     EXX
+0015   22 10 C0               LD   (0xC010),HL
+0018   F5                     PUSH   AF
+0019   E1                     POP   HL
+001A   22 0A C0               LD   (0xC00A),HL
+001D   ED 43 0C C0            LD   (0xC00C),BC
+0021   ED 53 0E C0            LD   (0xC00E),DE
+0025   ED 73 12 C0            LD   (0xC012),SP
+0029   76                     HALT
+
+
+22 06 C0 F5 E1 22 00 C0 ED 43 02 C0 ED 53 04 C0
+ED 73 08 C0 D9 22 10 C0 F5 E1 22 0A C0 ED 43 0C
+C0 ED 53 0E C0 ED 73 12 C0 76
